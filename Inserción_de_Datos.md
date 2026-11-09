@@ -73,9 +73,8 @@ INSERT INTO VENTA (id_venta, fecha_venta, cantidad, id_cliente, id_entrada, id_p
 ```
 
 
----
 <p align="center">
-  <a href="https://github.com/eduardo2006soto-dot/Proyecto_Final_U1/blob/main/Proyecto.md">
-    <img src="https://img.shields.io/badge/🗄️%20Ir%20a-Inserci%C3%B3n%20de%20Datos%20SQL-00758F?style=for-the-badge&logo=postgresql&logoColor=white" alt="Ir a SQL" />
+  <a href="https://github.com/eduardo2006soto-dot/Proyecto_Final_U1">
+    <img src="https://img.shields.io/badge/🏠%20VOLVER%20AL%20INICIO-EventPass-00758F?style=for-the-badge&logo=github&logoColor=white" alt="Volver al inicio" />
   </a>
 </p>
