@@ -220,3 +220,8 @@ El álgebra relacional facilita la consulta y el análisis de información media
 
 [1] R. Guamán-Quinche, *Álgebra Relacional*, presentación de clase, Carrera de Computación, Facultad de la Energía, las Industrias y los Recursos Naturales No Renovables, Universidad Nacional de Loja, Loja, Ecuador, 2024.
 
+<p align="center">
+  <a href="https://github.com/eduardo2006soto-dot/Proyecto_Final_U1/tree/main/Datos">
+    <img src="https://img.shields.io/badge/📊%20DATOS%20DE%20EVENTPASS-00758F?style=for-the-badge&logo=github&logoColor=white" alt="Datos de EventPass" />
+  </a>
+</p>
