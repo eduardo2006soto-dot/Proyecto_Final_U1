@@ -44,11 +44,16 @@ Diseñar e implementar una base de datos relacional para EventPass, mediante los
 ### 4.1. Modelo Entidad-Relación (E-R)
 <img width="1296" height="888" alt="image" src="https://github.com/user-attachments/assets/f9620d8b-7373-4cb1-9e4a-d145ec2acb4a" />
 Figura 1. Diagrama Entidad-Relación del sistema EventPass.
-*
-### 4.2. Modelo Relacional
-<img width="1478" height="861" alt="image" src="https://github.com/user-attachments/assets/98571aa1-f06d-4fb9-b586-a7c1ff9db2f4" />
 
-* **LINK** https://dbdiagram.io/d/6af207a56fcc7ae4c79cb8b9)
+* **LINK** (https://drive.google.com/file/d/1NVLUTApurMu-GWMkzQIgiKqoK17uTy4a/view?usp=sharing)
+  
+  
+### 4.2. Modelo Relacional
+
+<img width="1478" height="861" alt="image" src="https://github.com/user-attachments/assets/98571aa1-f06d-4fb9-b586-a7c1ff9db2f4" />
+Figura 2. Modelo relacional del sistema EventPass.
+
+*  **LINK** https://dbdiagram.io/d/6af207a56fcc7ae4c79cb8b9
 
 * **EVENTO** (`id_evento` PK, `nombre`, `fecha`, `lugar`)
 * **CLIENTE** (`id_cliente` PK, `nombres`, `apellidos`, `cedula`, `telefono`)
