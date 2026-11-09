@@ -1,25 +1,32 @@
-# Gestión de fiestas y control de venta de entradas - EventPass
+# 🎟️ Gestión de fiestas y control de venta de entradas - EventPass
 
 ## 📋 Datos Generales
 
-* **Asignatura:** Base de Datos
-* **Ciclo:** 3 A
-* **Unidad:** 1
-* **Resultado de aprendizaje de la unidad:** Modela bases de datos de problemas reales, bajo los principios de solidaridad, responsabilidad, transparencia y honestidad.
-* **Nombre del Docente:** Edwin René Guamán Quinche
-* **Fecha:** 08/11/2026
-* **Estudiante:** Eduardo José Soto Cabrera
-* **Universidad:** Universidad Nacional de Loja
-* **Facultad / Carrera:** FEIRNNR - Carrera de Computación
+| **Información** | **Detalle** |
+|---|---|
+| **Asignatura** | Base de Datos |
+| **Ciclo** | 3 A |
+| **Unidad** | 1 |
+| **Docente** | Edwin René Guamán Quinche |
+| **Fecha** | 08/11/2026 |
+| **Estudiante** | Eduardo José Soto Cabrera |
+| **Universidad** | Universidad Nacional de Loja |
+| **Facultad / Carrera** | FEIRNNR - Carrera de Computación |
+
+**Resultado de aprendizaje de la unidad:**
+
+Modela bases de datos de problemas reales, bajo los principios de solidaridad, responsabilidad, transparencia y honestidad.
 
 ---
 
-## 1. Título
-Gestión de fiestas y control de venta de entradas - EventPass
+## 1. 🎯 Título
+
+**Gestión de fiestas y control de venta de entradas - EventPass**
 
 ---
 
-## 2. Contexto del Problema
+## 2. 📌 Contexto del Problema
+
 En la organización de fiestas y eventos, como reuniones universitarias o celebraciones, es necesario llevar un control de los eventos programados, los clientes que adquieren entradas, los tipos de entradas disponibles y las ventas realizadas por los promotores. Cuando esta información se registra únicamente en cuadernos, mensajes o archivos separados, puede resultar difícil mantenerla ordenada y consultar los datos.
 
 Entre las principales dificultades se encuentran la repetición de información, la posibilidad de confundir los datos de los compradores, la falta de claridad sobre qué tipo de entrada corresponde a cada evento y la dificultad para identificar quién realizó una venta. Estas situaciones pueden afectar a los organizadores, promotores y clientes, porque complican el seguimiento de las ventas y de las entradas disponibles.
@@ -28,46 +35,62 @@ Por esta razón, se propone diseñar **EventPass**, una base de datos que almace
 
 ---
 
-## 3. Objetivos
+## 3. 🎯 Objetivos
 
 ### 3.1. Objetivo General
+
 Diseñar e implementar una base de datos relacional para EventPass, mediante los modelos entidad-relación y relacional y el lenguaje SQL, con el fin de organizar la información de eventos, clientes, promotores, entradas y ventas, y facilitar el control de las ventas y de la disponibilidad de entradas.
 
 ### 3.2. Objetivos Específicos
+
 1. Elaborar el modelo entidad-relación y el modelo relacional de EventPass, identificando entidades, atributos, relaciones y cardinalidades, para representar de forma ordenada la información de eventos, entradas, clientes, promotores y ventas.
+
 2. Implementar el esquema de la base de datos en SQL (creación de tablas e inserción de datos) y formular cinco consultas en álgebra relacional con su traducción a SQL, para registrar y consultar las ventas y la disponibilidad de entradas.
 
 ---
 
-## 4. Modelos Conceptuales de Bases de Datos
+## 4. 🗂️ Modelos Conceptuales de Bases de Datos
 
 ### 4.1. Modelo Entidad-Relación (E-R)
-<img width="1296" height="888" alt="image" src="https://github.com/user-attachments/assets/f9620d8b-7373-4cb1-9e4a-d145ec2acb4a" />
-Figura 1. Diagrama Entidad-Relación del sistema EventPass.
 
-* **LINK** (https://drive.google.com/file/d/1NVLUTApurMu-GWMkzQIgiKqoK17uTy4a/view?usp=sharing)
-  
-  
+<p align="center">
+  <img width="100%" src="https://github.com/user-attachments/assets/f9620d8b-7373-4cb1-9e4a-d145ec2acb4a" alt="Diagrama Entidad-Relación de EventPass" />
+</p>
+
+<p align="center">
+  <strong>Figura 1.</strong> Diagrama Entidad-Relación del sistema EventPass.
+</p>
+
+**🔗 Enlace:** [Ver diagrama original](https://drive.google.com/file/d/1NVLUTApurMu-GWMkzQIgiKqoK17uTy4a/view?usp=sharing)
+
 ### 4.2. Modelo Relacional
 
-<img width="1478" height="861" alt="image" src="https://github.com/user-attachments/assets/98571aa1-f06d-4fb9-b586-a7c1ff9db2f4" />
-Figura 2. Modelo relacional del sistema EventPass.
+<p align="center">
+  <img width="100%" src="https://github.com/user-attachments/assets/98571aa1-f06d-4fb9-b586-a7c1ff9db2f4" alt="Modelo relacional de EventPass" />
+</p>
 
-*  **LINK** https://dbdiagram.io/d/6af207a56fcc7ae4c79cb8b9
+<p align="center">
+  <strong>Figura 2.</strong> Modelo relacional del sistema EventPass.
+</p>
 
-* **EVENTO** (`id_evento` PK, `nombre`, `fecha`, `lugar`)
-* **CLIENTE** (`id_cliente` PK, `nombres`, `apellidos`, `cedula`, `telefono`)
-* **PROMOTOR** (`id_promotor` PK, `nombres`, `apellidos`, `telefono`, `correo`)
-* **ENTRADA** (`id_entrada` PK, `tipo`, `precio`, `cantidad_disponible`, `id_evento` FK → EVENTO)
-* **VENTA** (`id_venta` PK, `fecha_venta`, `cantidad`, `id_cliente` FK → CLIENTE, `id_entrada` FK → ENTRADA, `id_promotor` FK → PROMOTOR)
+**🔗 Enlace:** [Abrir modelo en dbdiagram.io](https://dbdiagram.io/d/6af207a56fcc7ae4c79cb8b9)
 
-*(Nota: PK = clave primaria; FK = clave foránea y la tabla a la que hace referencia).*
+**Estructura de las tablas:**
+
+- **EVENTO** (`id_evento` PK, `nombre`, `fecha`, `lugar`)
+- **CLIENTE** (`id_cliente` PK, `nombres`, `apellidos`, `cedula`, `telefono`)
+- **PROMOTOR** (`id_promotor` PK, `nombres`, `apellidos`, `telefono`, `correo`)
+- **ENTRADA** (`id_entrada` PK, `tipo`, `precio`, `cantidad_disponible`, `id_evento` FK → EVENTO)
+- **VENTA** (`id_venta` PK, `fecha_venta`, `cantidad`, `id_cliente` FK → CLIENTE, `id_entrada` FK → ENTRADA, `id_promotor` FK → PROMOTOR)
+
+*Nota: PK = clave primaria; FK = clave foránea y la tabla a la que hace referencia.*
 
 ---
 
-## 5. Código SQL
+## 5. 💻 Código SQL
 
 ### 5.1. Creación de Tablas (DDL)
+
 ```sql
 CREATE DATABASE IF NOT EXISTS eventpass;
 USE eventpass;
@@ -126,3 +149,14 @@ CREATE TABLE VENTA (
     FOREIGN KEY (id_entrada) REFERENCES ENTRADA(id_entrada),
     FOREIGN KEY (id_promotor) REFERENCES PROMOTOR(id_promotor)
 );
+```
+
+### 5.2. Inserción de Datos (DML)
+
+Para visualizar las instrucciones de inserción de eventos, clientes, promotores, entradas y ventas, consulta el siguiente apartado:
+
+<p align="center">
+  <a href="https://github.com/eduardo2006soto-dot/Proyecto_Final_U1/blob/main/Inserci%C3%B3n_de_Datos.md">
+    <img src="https://img.shields.io/badge/🗄️%20VER%20INSERCIÓN%20DE%20DATOS-00758F?style=for-the-badge&logo=mysql&logoColor=white" alt="Ver inserción de datos SQL" />
+  </a>
+</p>
