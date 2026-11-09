@@ -72,9 +72,11 @@ INSERT INTO VENTA (id_venta, fecha_venta, cantidad, id_cliente, id_entrada, id_p
 (8, '2026-11-07', 6, 3, 3, 5);
 ```
 
-
 <p align="center">
   <a href="https://github.com/eduardo2006soto-dot/Proyecto_Final_U1/blob/main/Proyecto.md">
-    <img src="https://img.shields.io/badge/🏠%20VOLVER%20AL%20INICIO-EventPass-00758F?style=for-the-badge&logo=github&logoColor=white" alt="Volver al inicio de EventPass" />
+    <img src="https://img.shields.io/badge/VOLVER%20AL%20INICIO-EventPass-00758F?style=for-the-badge&logo=github&logoColor=white" alt="Volver al inicio de EventPass" />
+  </a>&nbsp;&nbsp;
+  <a href="https://github.com/eduardo2006soto-dot/Proyecto_Final_U1/blob/main/Consulta_algebra.md">
+    <img src="https://img.shields.io/badge/CONSULTAS-Algebra%20Relacional-6C3483?style=for-the-badge&logo=github&logoColor=white" alt="Consultas de álgebra relacional" />
   </a>
 </p>
