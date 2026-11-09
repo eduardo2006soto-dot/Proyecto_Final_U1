@@ -27,6 +27,10 @@ En esta sección se presentan cinco consultas aplicadas al proyecto **EventPass*
 )
 ```
 
+<img width="840" height="494" alt="image" src="https://github.com/user-attachments/assets/0c9ecaa6-cc62-48d7-8035-1f23ee42c513" />
+
+* Figura 3. Resultado de la consulta 1 en Relational.
+
 **Código SQL:**
 
 ```sql
@@ -51,6 +55,10 @@ AND cantidad_disponible > 30;
     )
 )
 ```
+
+<img width="840" height="494" alt="image" src="https://github.com/user-attachments/assets/9c15be27-250a-475f-9e4f-74b0153572f9" />
+
+* **Figura 4. Resultado de la consulta 2 en Relational.**
 
 **Código SQL:**
 
@@ -84,6 +92,10 @@ WHERE v.id_venta >= 5;
 )
 ```
 
+<img width="840" height="496" alt="image" src="https://github.com/user-attachments/assets/4f1c42e1-1f45-4335-92f9-d5c02e8ae11c" />
+
+* **Figura 5. Resultado de la consulta 3 en Relational.**
+
 **Código SQL:**
 
 ```sql
@@ -114,6 +126,10 @@ e3 = π_id_cliente
 
 (e1 ∩ e3) ⋈ CLIENTE
 ```
+
+<img width="975" height="577" alt="image" src="https://github.com/user-attachments/assets/4b2ef8c1-1be9-4596-ac95-67f9f879fe4f" />
+
+* **Figura 6. Resultado de la consulta 4 en Relational.**
 
 **Código SQL:**
 
@@ -151,6 +167,10 @@ AND c.id_cliente IN (
 )
 ⋈ CLIENTE
 ```
+
+<img width="840" height="500" alt="image" src="https://github.com/user-attachments/assets/a3f3863f-9a09-482d-bb40-380cb246b53e" />
+
+* **Figura 7. Resultado de la consulta 5 en Relational.**
 
 **Código SQL:**
 
